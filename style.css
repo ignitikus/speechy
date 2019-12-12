@@ -2,3 +2,20 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
+.main-container{
+    height: inherit;
+}
+
+.sub-main-container{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 0.2fr;
+    grid-template-rows: 100%;
+    
+}
+
+.input-box{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
