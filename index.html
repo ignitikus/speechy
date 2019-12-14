@@ -8,14 +8,20 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link href="./style.css" rel="stylesheet" type="text/css">
     </head>
-    <body>
+    <body class="bg-dark text-white">
         <div class="main-container">
-            <div class="sub-main-container">
+            <div class="sub-main-container container text-center">
                 <div>
                     <div>top</div>
-                    <div class="input-box"><input type="text" name="input-text" class="input-box"></div>
+                    <div class="input-box interim"><input type="text" name="input-text" class="input-box"></div>
                 </div>
-                <div>Start Button</div>
+                <div>
+                    <button class="start-button">Start</button>
+                </div>
+                <div>
+                    <span class="final"></span>
+                    <span class="interim"></span>
+                </div>
             </div>
         </div>
         <script src="./main.js"></script>
