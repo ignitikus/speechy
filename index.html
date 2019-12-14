@@ -4,26 +4,33 @@
         <title>Speech to text</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link href="./style.css" rel="stylesheet" type="text/css">
     </head>
-    <body class="bg-dark text-white">
+    <body>
         <div class="main-container">
-            <div class="sub-main-container container text-center">
+            <div class="sub-main-container">
                 <div>
                     <div>top</div>
+                </div>
+                <div>
+                    <ul>
+                        <span class="final"></span>
+                        <span class="interim"></span>
+                    </ul>
+                </div>
+                <div class="input-box-container">
                     <div class="input-box interim"><input type="text" name="input-text" class="input-box"></div>
-                </div>
-                <div>
-                    <button class="start-button">Start</button>
-                </div>
-                <div>
-                    <span class="final"></span>
-                    <span class="interim"></span>
+                    <i class="microphone icon"></i>
+                    <div><input type="button" class="button" value="Send"></div>
                 </div>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+                integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                crossorigin="anonymous"></script>
+        <script src="semantic/dist/semantic.min.js"></script>
         <script src="./main.js"></script>
     </body>
 </html>
