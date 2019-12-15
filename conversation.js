@@ -18,3 +18,11 @@ const conversation = [
 ]
 
 let currentConversation = [...conversation]
+
+const addToCurrentConversation = (entry)=>{
+    currentConversation.push(entry)
+}
+
+const scrollWin= () =>{
+    window.scrollBy(0, 100);
+}

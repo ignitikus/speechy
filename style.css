@@ -8,7 +8,6 @@ body{
 }
 
 .main-container{
-    height: 100vh;
     display: grid;
     grid-template-columns: 0.3fr 1fr 0.3fr;
     grid-template-rows: 0.02fr 1fr 0.02fr;
@@ -18,12 +17,11 @@ body{
     background: linear-gradient(to right, #000066 12%, #3366cc 99%);
     border-radius: 35px;
     color: black;
-    height: 100%;
     grid-column: 2/span 1;
     grid-row: 2/span 1;
     display:grid;
     grid-template-columns: 0.02fr 1fr 0.02fr;
-    grid-template-rows: 0.02fr 1fr 0.06fr 0.02fr;
+    grid-template-rows: 0.02fr 0.1fr 0.06fr 0.02fr;
 }
 
 .interim{
@@ -34,7 +32,6 @@ body{
 .input-box-container{
     grid-column: 2/span 1;
     grid-row: 3/span 1;
-    height: 100%;
     display: grid;
     grid-template-columns: 1fr 0.1fr 0.1fr;
     justify-items: center;
