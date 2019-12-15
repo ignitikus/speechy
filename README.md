@@ -1,5 +1,8 @@
 # Speech Chat Bot (a.k.a Chabt)
 
+[Source Code](https://github.com/ignitikus/speechy)  
+[Demo](https://chabt.surge.sh/)
+
 ![img](./assets/Screen&#32;Shot&#32;2019-12-15&#32;at&#32;3.19.37&#32;PM.png)
 
 ## Features:
@@ -24,3 +27,5 @@
 2) Can be spoken after pressing `microphone` button.
 
 Unfortunately, only conventional names can be recognized by the API. But, they can be typed in!
+
+Note: I left plenty of comments in HTML and JS files.
