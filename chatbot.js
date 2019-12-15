@@ -51,7 +51,7 @@ const botConvo = ()=>{
         // Tells current time
         if(userText.includes('what') && userText.includes('time')){
             const entry = {
-                text: `It's ${new Date().getHours()}:${new Date().getMinutes()}`,
+                text: `It's ${(new Date().getHours()).toString().padStart(2,'0')}:${(new Date().getMinutes()).toString().padStart(2,'0')}`,
                 id: 'bot',
             }
             addToCurrentConversation(entry)
