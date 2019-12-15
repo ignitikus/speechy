@@ -66,3 +66,25 @@ body{
     box-shadow: 5px 5px none;
     transform: scale(0.7, 0.7)
 }
+
+.conversation-container{
+    width: 100%;
+    grid-column: 2/span 1;
+}
+
+.conversation{
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.text-container{
+    background-color: gray;
+    width: 100%;
+}
+
+.bot-text{
+}
+
+.user-text{
+    text-align: right;
+}
