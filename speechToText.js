@@ -24,6 +24,9 @@ speech.onresult = (event)=>{
             interim_transcript += event.results[i][0].transcript;
         }
     }
+    if(final_transcript.includes('my') && final_transcript.includes('name')){
+        userName = final_transcript.split(' ').slice(-1)
+    }
     document.querySelector('.interim').value = interim_transcript;
     document.querySelector('.interim').style.color = 'orange'
     document.querySelector('.interim').style.fontStyle = 'italic'

@@ -15,8 +15,10 @@ const scrollWin= () =>{
     window.scrollBy(0, 100);
 }
 
-const delay = () =>{
+const delay = (num) =>{
     setTimeout(function(){ 
         document.querySelector('ul').innerHTML =''
-        printWholeConversation(currentConversation); }, 1500);
+        printWholeConversation(currentConversation); }, num);
 }
+
+let userName = ''
