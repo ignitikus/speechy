@@ -1,3 +1,4 @@
+// creates a 'p' element within a 'div' element.
 const printConvo = (message)=>{
     const newDiv = document.createElement('div')
     const newPar = document.createElement('p')
@@ -6,6 +7,8 @@ const printConvo = (message)=>{
     
     newPar.innerText = message.text;
     
+    // this is useful only for already exsiting data conversation.js.
+    // usefull for testing
     if(message.id === 'bot'){
         newDiv.classList.add('bot-text')
     } else if(message.id === 'user'){

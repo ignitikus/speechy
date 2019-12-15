@@ -27,8 +27,6 @@ body{
 .interim{
     opacity: 0.7;
 }
-.final{
-}
 
 .input-box-container{
     grid-column: 2/span 1;
@@ -90,4 +88,33 @@ body{
 .user-text{
     background-color: ivory;
     text-align: right;
+}
+
+@media (max-width: 800px){
+    .main-container{
+        grid-template-columns: 0.1fr 1fr 0.1fr;
+    }
+    .input-box{
+        font-size: 130%;
+    }
+}
+
+@media (max-width: 450px){
+    .main-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding: 5px 2px 5px 2px;
+    }
+    .input-box{
+        font-size: 130%;
+    }
+    .sub-main-container{
+        border-radius: 15px;
+        grid-template-rows: 1fr;
+        position: absolute;
+        bottom: 0;
+    }
+    .conversation{
+        overflow: scroll;
+    }
 }
