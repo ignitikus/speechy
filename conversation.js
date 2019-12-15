@@ -24,4 +24,5 @@ const delay = (num) =>{
         printWholeConversation(currentConversation); }, num);
 }
 
+
 let userName = ''

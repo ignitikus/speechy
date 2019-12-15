@@ -26,9 +26,7 @@ speech.onresult = (event)=>{
             interim_transcript += event.results[i][0].transcript;
         }
     }
-    if(final_transcript.includes('my') && final_transcript.includes('name')){
-        userName = final_transcript.split(' ').slice(-1)
-    }
+
     
     // interim result will be displayed before final transcript is ready.
     document.querySelector('.interim').value = interim_transcript;

@@ -11,17 +11,21 @@ const botConvo = ()=>{
             }
             addToCurrentConversation(entry)
             delay(1500)
+            let utterThis = new SpeechSynthesisUtterance(entry.text)
+            window.speechSynthesis.speak(utterThis)
             scrollWin()
         }
 
         // entry.text grabs the name that stored in variable in conversation.js
         if(userText.includes('name') && userText.includes('is')){
             const entry = {
-                text: `${userName}! What a beautiful name!`,
+                text: `${userText.split(' ').slice(-1)}! What a beautiful name!`,
                 id: 'bot',
             }
             addToCurrentConversation(entry)
             delay(1500)
+            let utterThis = new SpeechSynthesisUtterance(entry.text)
+            window.speechSynthesis.speak(utterThis)
             scrollWin()
         }
 
@@ -33,6 +37,8 @@ const botConvo = ()=>{
             }
             addToCurrentConversation(entry)
             delay(2000)
+            let utterThis = new SpeechSynthesisUtterance(entry.text)
+            window.speechSynthesis.speak(utterThis)
             scrollWin()
             const joke = (num) =>{
                 setTimeout(function(){ 
@@ -40,6 +46,8 @@ const botConvo = ()=>{
                         text: `Because he didn't get arrays.`,
                         id: 'bot',
                     }
+                    let utterThis = new SpeechSynthesisUtterance(entry.text)
+                    window.speechSynthesis.speak(utterThis)
                     addToCurrentConversation(entry)
                     document.querySelector('ul').innerHTML =''
                     printWholeConversation(currentConversation); }, num);
@@ -56,6 +64,8 @@ const botConvo = ()=>{
             }
             addToCurrentConversation(entry)
             delay(1500)
+            let utterThis = new SpeechSynthesisUtterance(entry.text)
+            window.speechSynthesis.speak(utterThis)
             scrollWin()
         }
 
@@ -67,6 +77,8 @@ const botConvo = ()=>{
             }
             addToCurrentConversation(entry)
             delay(1500)
+            let utterThis = new SpeechSynthesisUtterance(entry.text)
+            window.speechSynthesis.speak(utterThis)
             scrollWin()
         }
 
@@ -97,17 +109,21 @@ const botConvo = ()=>{
             }
             addToCurrentConversation(entry)
             delay(1500)
+            let utterThis = new SpeechSynthesisUtterance(entry.text)
+            window.speechSynthesis.speak(utterThis)
             scrollWin()
         }
 
         // Goodbye text.
         if(userText.includes('good') && userText.includes('bye')){
             const entry = {
-                text: `It was nice talking to you, ${userName}. Come again! I stored your name in my memory.`,
+                text: `It was nice talking to you ${userName}. I'll remember your name until you reset this page.`,
                 id: 'bot',
             }
             addToCurrentConversation(entry)
             delay(1500)
+            let utterThis = new SpeechSynthesisUtterance(entry.text)
+            window.speechSynthesis.speak(utterThis)
             scrollWin()
         }
     }
