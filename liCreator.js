@@ -4,7 +4,6 @@ const printConvo = (message)=>{
 
     newDiv.classList.add('text-container')
     
-    
     newPar.innerText = message.text;
     
     if(message.id === 'bot'){
@@ -12,8 +11,6 @@ const printConvo = (message)=>{
     } else if(message.id === 'user'){
         newDiv.classList.add('user-text')
     }
-
-    let textBoxCount = `.conversation`
 
     document.querySelector('.conversation').appendChild(newDiv)
     document.querySelectorAll('.text-container')[document.querySelectorAll('.text-container').length-1].appendChild(newPar)

@@ -9,6 +9,7 @@ document.querySelector('.send-button').addEventListener('click',()=>{
     printWholeConversation(currentConversation)
     document.querySelector('.final').value=''
     scrollWin()
+    botConvo()
 })
 
 document.querySelector('.final').addEventListener('keydown',(event)=>{
@@ -23,5 +24,6 @@ document.querySelector('.final').addEventListener('keydown',(event)=>{
         printWholeConversation(currentConversation)
         document.querySelector('.final').value=''
         scrollWin()
+        botConvo()
     }
 });

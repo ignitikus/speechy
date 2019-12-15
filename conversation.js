@@ -1,18 +1,6 @@
 const conversation = [
     {
-        text: 'Hello, I\'m a Chat-bot',
-        id: 'bot',
-    },
-    {
-        text: 'Hello Chat-bot',
-        id: 'user',
-    },
-    {
-        text: 'Hello Chat-bot',
-        id: 'user',
-    },
-    {
-        text: 'Hello, I\'m a Chat-bot',
+        text: 'Hello, I\'m a Chat-bot. Go ahead and ask me some questions',
         id: 'bot',
     },
 ]
@@ -25,4 +13,10 @@ const addToCurrentConversation = (entry)=>{
 
 const scrollWin= () =>{
     window.scrollBy(0, 100);
+}
+
+const delay = () =>{
+    setTimeout(function(){ 
+        document.querySelector('ul').innerHTML =''
+        printWholeConversation(currentConversation); }, 1500);
 }

@@ -26,7 +26,9 @@ speech.onresult = (event)=>{
     }
     document.querySelector('.interim').value = interim_transcript;
     document.querySelector('.interim').style.color = 'orange'
+    document.querySelector('.interim').style.fontStyle = 'italic'
     document.querySelector('.final').value = final_transcript[0].toUpperCase() + final_transcript.slice(1);
     document.querySelector('.final').style.color = 'black'
+    document.querySelector('.final').style.fontStyle = 'normal'
 }
 

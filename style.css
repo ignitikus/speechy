@@ -25,10 +25,10 @@ body{
 }
 
 .interim{
-    font-style: italic;
     opacity: 0.7;
 }
-
+.final{
+}
 
 .input-box-container{
     grid-column: 2/span 1;
