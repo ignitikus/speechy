@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: rgb(76, 110, 106);
+    background-color: #2D3E50;
 }
 
 .main-container{
@@ -15,11 +15,10 @@ body{
 }
 
 .sub-main-container{
-    background-color: ivory;
+    background: linear-gradient(to right, #000066 12%, #3366cc 99%);
     border-radius: 35px;
     color: black;
     height: 100%;
-    border: 1px solid red;
     grid-column: 2/span 1;
     grid-row: 2/span 1;
     display:grid;
@@ -28,7 +27,6 @@ body{
 }
 
 .interim{
-    color: orange;
     font-style: italic;
     opacity: 0.7;
 }
@@ -75,16 +73,23 @@ body{
 .conversation{
     list-style-position: inside;
     padding-left: 0;
+    margin-top: 2%;
 }
 
 .text-container{
-    background-color: gray;
-    width: 100%;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin: 0.2em;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: x-large;
 }
 
 .bot-text{
+    background-color: #2D3E50;
+    color: ivory;
 }
 
 .user-text{
+    background-color: ivory;
     text-align: right;
 }

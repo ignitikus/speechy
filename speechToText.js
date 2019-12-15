@@ -5,7 +5,7 @@ speech.interimResults = true
 speech.language = 'en-US'
 
 
-document.querySelector('.send-button').addEventListener('click', ()=>{
+document.querySelector('.microphone-button').addEventListener('click', ()=>{
     speech.start()
 })
 
@@ -24,9 +24,7 @@ speech.onresult = (event)=>{
             interim_transcript += event.results[i][0].transcript;
         }
     }
-    document.querySelector('.final').innerHTML = final_transcript;
-    document.querySelector('.interim').innerHTML = interim_transcript;
-    console.log(document.querySelector('.final').innerHTML)
-    console.log(document.querySelector('.interim').innerHTML)
+    document.querySelector('.interim').value = interim_transcript;
+    document.querySelector('.final').value = final_transcript;
 }
 
